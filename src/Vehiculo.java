@@ -45,26 +45,62 @@ public class Vehiculo {
     }
 
     public void setPlaca(String placa) {
-        this.placa = placa;
+        if (placa.isEmpty()) {
+            System.out.println("Placa : formato invalido ");
+        }
+
+        else {
+            this.placa = placa;
+        }
     }
 
     public void setMarca(String marca) {
-        this.marca = marca;
+        if (marca.isEmpty()) {
+            System.out.println("Marca : formato invalido ");
+        }
+
+        else {
+            this.marca = marca;
+        }
     }
 
     public void setModelo(String modelo) {
-        this.modelo = modelo;
+        if (modelo.isEmpty()) {
+            System.out.println("Modelo : formato invalido ");
+        }
+
+        else {
+            this.modelo = modelo;
+        }
     }
 
     public void setAnio(int anio) {
-        this.anio = anio;
+        if (anio < 1900 && anio > 2027) {
+            System.out.println("Año : fecha invalida ");
+        }
+
+        else {
+            this.anio = anio;
+        }
     }
 
     public void setColor(String color) {
-        this.color = color;
+        if (color.isEmpty()) {
+            System.out.println("Color : formato invalido ");
+        }
+
+        else {
+            this.color = color;
+        }
     }
 
     public void setPrecio(double precio) {
-        this.precio = precio;
+        if (precio > 0) {
+            this.precio = precio;
+        }
+
+        else {
+            System.out.println("Precio : debe ser mayor a 0 ");
+        }
     }    
 }
