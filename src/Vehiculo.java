@@ -46,37 +46,41 @@ public class Vehiculo {
 
     public void setPlaca(String placa) {
         if (placa.isEmpty()) {
-            System.out.println("Placa : formato invalido ");
+            RegistroVehiculos.mostrarValidacionRegistro("Placa", "FORMATO INVALIDO ");
+            this.placa = "FORMATO INVALIDO";
         }
 
         else {
-            this.placa = placa;
+            this.placa = placa.toUpperCase();
         }
     }
 
     public void setMarca(String marca) {
         if (marca.isEmpty()) {
-            System.out.println("Marca : formato invalido ");
+            RegistroVehiculos.mostrarValidacionRegistro("Marca", "FORMATO INVALIDO ");
+            this.marca = "FORMATO INVALIDO";
         }
 
         else {
-            this.marca = marca;
+            this.marca = marca.toUpperCase();
         }
     }
 
     public void setModelo(String modelo) {
         if (modelo.isEmpty()) {
-            System.out.println("Modelo : formato invalido ");
+            RegistroVehiculos.mostrarValidacionRegistro("Modelo", "FORMATO INVALIDO ");
+            this.modelo = "FORMATO INVALIDO";
         }
 
         else {
-            this.modelo = modelo;
+            this.modelo = modelo.toUpperCase();
         }
     }
 
     public void setAnio(int anio) {
-        if (anio < 1900 && anio > 2027) {
-            System.out.println("Año : fecha invalida ");
+        if (anio < 1900 || anio > 2027) {
+            RegistroVehiculos.mostrarValidacionRegistro("Año", "FECHA INVALIDA ");
+            this.anio = 2000;
         }
 
         else {
@@ -86,11 +90,12 @@ public class Vehiculo {
 
     public void setColor(String color) {
         if (color.isEmpty()) {
-            System.out.println("Color : formato invalido ");
+            RegistroVehiculos.mostrarValidacionRegistro("Color", "FORMATO INVALIDO ");
+            this.color = "FORMATO INVALIDO";
         }
 
         else {
-            this.color = color;
+            this.color = color.toUpperCase();
         }
     }
 
@@ -100,7 +105,8 @@ public class Vehiculo {
         }
 
         else {
-            System.out.println("Precio : debe ser mayor a 0 ");
+            RegistroVehiculos.mostrarValidacionRegistro("Precio", "PRECIOR MENOR A 0 ");
+            this.precio = 1;
         }
     }    
 }
