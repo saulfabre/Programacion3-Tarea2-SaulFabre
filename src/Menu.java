@@ -56,7 +56,7 @@ public class Menu {
                     System.out.print("[...] Placa : ");
                     String placaBuscada = scanner.nextLine();
 
-                    System.out.println("[...] VEHICULO REGISTRADO PLACA : " + placaBuscada);
+                    System.out.println("[...] VEHICULO REGISTRADO PLACA : " + placaBuscada.toUpperCase());
 
                     registroVehiculos.buscarVehiculoPlaca(placaBuscada);
                     break;
