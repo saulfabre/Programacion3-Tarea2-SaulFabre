@@ -15,6 +15,7 @@ Sistema de registro de vehiculos hecho en java, permite:
 2. Mostrar vehiculos registrados
 3. Buscar vehiculo por placa
 4. Mostrar vehiculos por marca
+
 Todo esto mediante un menu interactivo en consola que permite utilizar las distintas opciones del programa de forma rapida. 
 
 ## Tecnologias utilizadas
