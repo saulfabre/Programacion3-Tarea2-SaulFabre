@@ -65,11 +65,7 @@ public class RegistroVehiculos {
     }
 
     public void mostrarVehiculo(Vehiculo vehiculo) {
-
-        // System.out.println("====================================");
-        // System.out.println("VEHICULO : " + vehiculo.getMarca() + " " + vehiculo.getModelo());
-        // System.out.println("====================================");
-
+        
         System.out.println("[...] Vehiculo : " + vehiculo.getMarca() + " " + vehiculo.getModelo());
         System.out.println("[...] Placa    : " + vehiculo.getPlaca());
         System.out.println("[...] Marca    : " + vehiculo.getMarca());
